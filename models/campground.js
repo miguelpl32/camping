@@ -8,24 +8,28 @@ const CampGroundSchema = new Schema({
     price: Number,
     description: String,
     location: String,
+    author: {
+        type: Schema.Types.ObjectId,
+        ref: "User",
+    },
     reviews: [
         {
             type: Schema.Types.ObjectId,
-            ref: 'Review'
-        }
-    ]
+            ref: "Review",
+        },
+    ],
 });
 
 // Eliminar todos los reviews si se elimina el campamento.
 
-CampGroundSchema.post('findOneAndDelete', async function(doc) {
-    if(doc){
+CampGroundSchema.post("findOneAndDelete", async function (doc) {
+    if (doc) {
         await Review.deleteMany({
-            _id:{
-                $in: doc.reviews
-            }
-        })
+            _id: {
+                $in: doc.reviews,
+            },
+        });
     }
-})
+});
 
 module.exports = mongoose.model("Campground", CampGroundSchema);
