@@ -1,3 +1,9 @@
+if(process.env.NODE_ENV !== "production") {
+    require('dotenv').config();
+}
+
+
+
 const express = require("express");
 const path = require("path");
 const mongoose = require("mongoose");
@@ -82,11 +88,13 @@ app.get("/", (req, res) => {
 app.all("*", (req, res, next) => {
     next(new ExpressError("Page Not Found", 404));
 });
+
 app.use((err, req, res, next) => {
     const { statusCode = 500 } = err;
     if (!err.message) err.message = "Oh No, Algo salio mal!";
     res.status(statusCode).render("error", { err });
 });
+
 app.listen(3000, () => {
     console.log("Conectado en el Puerto 3000");
 });
