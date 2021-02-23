@@ -168,6 +168,7 @@ app.use((err, req, res, next) => {
     res.status(statusCode).render("error", { err });
 });
 
-app.listen(3000, () => {
-    console.log("Conectado en el Puerto 3000");
+const port = process.env.PORT || 3000;
+app.listen( port, () => {
+    console.log(`Conectado en el Puerto: ${port}`);
 });
