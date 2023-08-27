@@ -6,7 +6,7 @@ Proyecto realizado en [Angular CLI](https://github.com/angular/angular-cli) vers
 
 [Visita el proyecto](https://slate-gray-greyhound-gear.cyclic.cloud/)
 
-![](src/assets/peliculasApp.png)
+![](yelpcamp.jpg)
 
 
 
