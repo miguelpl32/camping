@@ -1,6 +1,5 @@
 # CAMPING
 
-Proyecto realizado en [Angular CLI](https://github.com/angular/angular-cli) version 10.0.8.
 
 ### Visita el proyecto.
 
@@ -18,7 +17,7 @@ Proyecto realizado en [Angular CLI](https://github.com/angular/angular-cli) vers
 
 
 ## Lenguajes
-+ Angular
-+ Typescript
++ JavaScript
++ EJS
 + CSS
 
