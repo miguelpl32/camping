@@ -11,10 +11,10 @@ Proyecto realizado en [Angular CLI](https://github.com/angular/angular-cli) vers
 
 
 ## Objetivo
-Conexion API, conexion entre componentes y traspaso de información.
-Creacion Usuarios
-Creacion comentarios.
-Borrar comentarios.
++ Conexion API, conexion entre componentes y traspaso de información.
++ Creacion Usuarios
++ Creacion comentarios.
++ Borrar comentarios.
 
 
 ## Lenguajes
